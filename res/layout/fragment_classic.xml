@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/beige"  >
+    
+	<Button 
+        android:id="@+id/button_instruction"
+        android:layout_height="wrap_content"
+        android:layout_width="110dp"
+        android:text="@string/instruction"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@drawable/button_instruction"
+        android:layout_margin="5dp"/>
+	
+	<!-- 2 imagebuttons en 2 aparte views allemaal naast elkaar -->
+	<RelativeLayout 
+		android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_margin="10dp">
+		<Button 
+		    android:id="@+id/imagebutton_back"
+		    android:layout_height="60dp"
+		    android:layout_width="60dp"
+		    android:background="@drawable/button_back"
+		    android:layout_marginTop="5dp"/>
+	
+		<Button 
+		    android:id="@+id/imagebutton_restart"
+		    android:layout_height="60dp"
+		    android:layout_width="60dp"
+		    android:background="@drawable/button_restart"
+		    android:layout_margin="5dp"
+		    android:layout_toRightOf="@id/imagebutton_back"/>
+	    
+		<LinearLayout 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="5dp">
+		    
+		    <LinearLayout 
+		    android:background="@drawable/rectangle"
+		    android:layout_width="60dp"
+		    android:layout_height="60dp"
+		    android:layout_margin="5dp"
+		    android:orientation="vertical">
+
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/score"
+		        android:textColor="@color/white"
+		        android:layout_gravity="center" />
+
+		    <TextView
+		        android:id="@+id/score"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="5dp" 
+		        android:layout_gravity="center"/>
+		    
+		</LinearLayout>
+			<LinearLayout 
+		    android:background="@drawable/rectangle"
+		    android:layout_width="60dp"
+		    android:layout_height="60dp"
+		    android:layout_marginTop="5dp"
+		    android:orientation="vertical">
+
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/best"
+		        android:textColor="@color/white"
+		        android:layout_gravity="center" />
+
+		    <TextView
+		        android:id="@+id/best"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white"
+		        android:layout_marginTop="5dp" 
+		        android:layout_gravity="center"/>
+		    
+		</LinearLayout>
+		</LinearLayout>
+		
+	</RelativeLayout>
+
+	
+	<!-- Hier komt het echte werk, de puzzel zelf, probeer het hier te maken zonder een aparte view -->
+	<!-- 1. Eerst een grote vierkant maken -->
+	
+	<LinearLayout
+	    android:id="@+id/thebox"
+	    android:background="@drawable/rectangle"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical"
+	    android:layout_margin="15dp"
+	    android:padding="5dp">
+
+	</LinearLayout>
+	
+	<!-- 2. Hierin 16 vierkanten plaatsen, deze vierkanten zijn dynamisch, dus ze kunnen van staat veranderen
+	ofwel is het 0, ofwel 2, 4, 8, ... -->
+	<!-- De verschillende vierkanten ergens anders declareren, mss als een drawable -->
+	<!-- Van vierkant 2 tot 2048 zijn het verschillende kleuren, vanaf 4092 (voor endless mode) is het zwart.
+		Mss heb je hiervoor een ENUM nodig. Dat is dan in de programma zelf, niet hier in de layout. -->
+	
+
+</LinearLayout>

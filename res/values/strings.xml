@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">2048</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="classic">Classic mode</string>
+    <string name="time">Time trial</string>
+    <string name="endless">Endless mode</string>
+    <string name="about">About 2048</string>
+    <string name="about_text">This is a remake of the original 2048 game which was built by Gabrielle Cirulli. 
+        That game was inspired by 1024 made by Veewo Studio and Threes by Asher Vollmer.</string>
+	<string name="instruction">How to play</string>
+	<string name="score">SCORE:</string>
+	<string name="best">BEST:</string>
+	
+    <color name="beige">#FFFBEF</color>
+    <color name="victory_yellow">#EDC22E</color>
+    <color name="darkbrown">#BAAD9E</color>
+    <color name="brown">#CBC0B2</color>
+    <color name="white">#FFFFFF</color>
+    
+    <color name="beige2">#EEE4DA</color>
+    <color name="beige4">#EDE0C8</color>
+    <color name="orange8">#F2B179</color>
+    <color name="orange16">#F59563</color>
+    <color name="red32">#F67C5F</color>
+    <color name="red64">#F65E3B</color>
+    <color name="yellow128">#EDCF72</color>
+    <color name="yellow256">#EDCC61</color>
+    <color name="yellow512">#EDC850</color>
+    <color name="yellow1024">#EDC53F</color>
+    <color name="yellow2048">#EDC22E</color>
+
+    <string name="title_activity_about_fragment">AboutFragment</string>
+
+</resources>
